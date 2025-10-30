@@ -104,11 +104,11 @@ h1::after {
 
 .play{
     /* z-index: 2; */
-    position: absolute;
+    position: relative;
     width: 315px;
     height: 200px;
     /* right: 35em; */
-    top: -20    em;
+    top: -41em;
     left: 1.2em;
 }
 
