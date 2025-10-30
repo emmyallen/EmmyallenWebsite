@@ -127,6 +127,12 @@ body{
     right: 1px;
 }
 
+.messg{
+    position: absolute;
+    top: 8.5em;
+    left: 5em;
+}
+
 .imgtextDS {
     /* margin-top: 1em; */
     position: absolute;
