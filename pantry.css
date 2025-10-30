@@ -1,0 +1,237 @@
+.back2shelf{
+    height: 110px;
+    width: 110px;
+    margin-left: 180px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.back2shelfA{
+    height: 50px;
+    width: 50px;
+    margin-left:    -36px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.middle{
+   /* margin-left: 25em; */
+   /* margin-top: 5em;  */
+   display: flex;
+   margin-top: 5em;
+}
+
+body{
+    background-color: #7a8b65;
+}
+
+h1{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw; /* scales with screen width */
+    text-align: center;
+    color: #bed89f;
+}
+
+.pantry{
+    width: 320px;
+    /* margin-right: 20em; */
+    margin-left: 15em;
+    /* margin-bottom: 6em; */
+    margin-top: 4em;
+}
+
+.berry{
+    width: 300px;
+    margin-top: em;
+    margin-right: 10em;
+    margin-bottom: 3em;
+}
+
+.lilarrow{
+    position: absolute;
+    left: 12em;
+    top: 30em;
+    width: 200px;
+
+}
+
+a{
+    color: #7a8b65;
+}
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 9em;
+    gap: 2em;
+} */
+
+.sum {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background-color: #bed89f;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.overview{
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background-color: #bed89f;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* gap: 2em; */
+    margin-top: 14em;
+    /* padding: 2em; */
+}
+
+/* Container behind everything */
+.fruit-container {
+    position: fixed;       /* fixed so it stays in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;  /* clicks pass through */
+    z-index: -1;           /* behind all other elements */
+}
+
+/* Fruit style */
+.fruit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: float 10s linear infinite;
+}
+
+/* Randomize starting positions and delays */
+.fruit:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.fruit:nth-child(2) { top: 30%; left: 70%; animation-delay: 1s; }
+.fruit:nth-child(3) { top: 60%; left: 40%; animation-delay: 2s; }
+.fruit:nth-child(4) { top: 80%; left: 10%; animation-delay: 3s; }
+.fruit:nth-child(5) { top: 90%; left: 80%; animation-delay: 4s; }
+
+
+/* Floating / dancing animation */
+@keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(30px, -20px) rotate(10deg); }
+    50% { transform: translate(-20px, 30px) rotate(-10deg); }
+    75% { transform: translate(20px, -30px) rotate(15deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+/* Small tablets */
+@media (max-width: 1024px) {
+    .middle {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+    }
+
+    .pantry {
+        width: 60%;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    .lilarrow {
+        position: relative;
+        left: 0;
+        top: 1em;
+        width: 150px;
+    }
+
+    .sum, .overview {
+        max-width: 90%;
+        font-size: 1.1rem;
+    }
+
+    .berry {
+        width: 70%;
+        margin-right: 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 10vw;
+        top: 7%;
+    }
+
+    .back2shelf {
+        height: 80px;
+        width: 80px;
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+
+    .back2shelfA {
+        height: 40px;
+        width: 40px;
+        margin-left: 5%;
+    }
+
+    .pantry {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .lilarrow {
+        width: 100px;
+        top: 1em;
+        left: 0;
+    }
+
+    .sum, .overview {
+        font-size: 1rem;
+        padding: 0.8em;
+    }
+
+    .berry {
+        width: 90%;
+    }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 12vw;
+    }
+
+    .pantry {
+        width: 90%;
+    }
+
+    .lilarrow {
+        width: 80px;
+    }
+
+    .sum, .overview {
+        font-size: 0.9rem;
+        padding: 0.6em;
+    }
+}

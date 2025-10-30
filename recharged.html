@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recharged.css">
+    <title>Virtual Pantry Project</title>
+</head>
+<body>
+    <a href="home.html">
+        <img class="back2shelf" src="img/Adobe Express - file (6).png" alt="shelf">
+        <img class="back2shelfA" src="img/Adobe Express - file (7).png" alt="shelf">
+        </a>  
+
+        <h1>Recharged</h1> 
+        
+    <div class="container"></div>
+        <div class="middle"> 
+                <a href="#down">
+           <img class="dvd" src="img/Group 5 (1).png" alt="dvdopportunity"> </a>
+
+             </div>
+             
+             <p class="sum">
+                Our main focus is health and well being, specifically in mental health and phone addiction. We all came together as a team to help stop phone addiction and come up with a way to combat that addiction. We created an app that is designed to help you keep up on studying, work, or even time with yourself. Through using our app, we want people to be able to regulate their screen time, increase their productivity, and overall improve their mental health. </p>
+            
+            
+<section>
+            <img id="down" class="car" src="img/6b48790b-77a9-449e-98a4-e22fd1a3b9a6 1.png" alt="cardvd">
+            <iframe  class="play" width="560" height="315" src="https://www.youtube.com/embed/DJj-m2wYF2s?si=2MD09y6mHkuKhXgN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p class="overview">
+                One of the primary goals of "Recharged" is to help you take control of your digital habits. The app features a range of tools and features to help you monitor and manage your screen time, including:
+</p><p class="overview3">
+               <span style="color: purple;">Screen Time Tracking:</span>  Gain insights into your daily and weekly screen usage patterns, allowing you to identify areas for improvement.
+                <br>
+                <span style="color: purple;">App Limits:</span> Set customizable time limits for specific apps, encouraging you to use them in moderation.
+                
+                We also place a strong emphasis on supporting your mental well-being. The app offers a variety of features and resources to help you cultivate a healthier mindset, including:
+                <br>
+
+                <span style="color: purple;">Mindfulness Exercises:</span> Access a library of guided meditations, breathing techniques, and other mindfulness practices to help you reduce stress and anxiety.
+                <br>
+
+                <span style="color: purple;">Mood Tracking:</span> Monitor your emotional state over time, allowing you to identify patterns and trends that may impact your mental health.
+    <br>
+    <span style="color: purple;">Gratitude Journal:</span> Encourage a positive outlook by regularly reflecting on the things you're grateful for.
+                <br>
+
+                <span style="color: purple;">Mental Health Resources:</span> Discover curated articles, podcasts, and expert-led workshops on topics such as stress management, self-care, and emotional resilience.
+</p><p class="overview5">
+                In addition to addressing screen time and mental health, "Recharged" also aims to help you become more productive and focused. The app includes the following features:
+               <br>
+    
+                <span style="color: purple;">Task Management:</span> Organize your to-do lists, set reminders, and track your progress on important tasks.
+                <br>
+
+                <span style="color: purple;">Goal Setting:</span> Define and track your personal and professional goals, celebrating your achievements along the way, along with competing and sharing progress with your friends or wider community.
+                
+                Whether you're looking to reduce screen time, improve your mental health, or boost your productivity, this app provides the tools and resources you need to thrive in the digital age.          </p>
+                  </p> 
+
+</section>
+            
+           
+
+
+      
+    
+    
+
+   
+       
+    </div>
+
+    <section>
+
+       
+            
+                <div class="tv-container">
+        </div>
+
+        
+    </section>
+
+  
+  
+
+   
+    <!-- Charging phone in corner -->
+  <div class="phone-container">
+    <div class="phone">
+      <div class="battery"></div>
+    </div>
+  </div>
+
+      <script>
+        // Scroll-based battery fill
+        window.addEventListener("scroll", () => {
+          const battery = document.querySelector(".battery");
+          const scrollY = window.scrollY;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+          const scrollPercent = scrollY / docHeight;
+          const batteryLevel = Math.min(100, Math.max(0, scrollPercent * 100));
+          battery.style.height = batteryLevel + "%";
+        });
+      </script>
+</body>
+
+</html>

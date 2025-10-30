@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Emmy's Corner of the Web</title>
+</head>
+<body>
+
+    <h1 class="toptext">Welcome to Emmy's Shelf</h1>
+
+    <a href="https://www.youtube.com/watch?v=qAcv2EKJhlc" target="_blank" rel="noopener noreferrer"> <img class="cig" src="img/Adobe Express - file (1) 1.png"></a>
+    <img class="tack" src="img/ThumbTack-PNG-File-Download-Free.png">
+
+    <div class="bookcase"> 
+        <div class="Tshelf">
+            
+    <!-- https://stackoverflow.com/questions/63658353/trying-to-simulate-a-shelf-of-books-in-html-css-how-to-resize-books-keep-align -->
+        <a href="https://www.linkedin.com/in/emmylouallen/" target="_blank"><img class="linkedin" src="img/ChatGPT_Image_Jun_24__2025__12_13_47_PM-removebg-preview 1 (1).png" alt="linkedin"></a>
+
+        <div class="images-outer">
+            <div class="image1">
+                <input type="image" class="one" src="img/P.png" onclick="openPopup()">
+            </div>
+            <div class="image2">
+                <input type="image" class="two" src="img/P (2).png" onclick="openPopup()">
+            </div>
+            <div class="image3">
+                <input type="image" class="three" src="img/P (3).png" onclick="openPopup()">
+            </div>
+            <div class="image4">
+                <input type="image" class="four" src="img/Adobe Express - file.png" onclick="openPopup()">
+            </div>
+            <div class="image5">
+                <input type="image" class="five" src="img/P (5).png" onclick="openPopup()">
+            </div>
+            <div class="image6">
+                <input type="image" class="six" src="img/P (6).png" onclick="openPopup()">
+            </div>
+        </div>
+        </div>
+        <div class="shelf">
+            <img class="dsbox" src="img/Group 1.png" onclick="openDSPopup()">
+           <a href="https://github.com/emmyallen?tab=repositories" target="_blank"> <img class="git" src="img/Group 2.png"></a>
+            <div class="bshelf">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="popupProjects" id="popup">
+        <div id="card">
+            <div id="dragBar"></div>
+        <img class="window"   src="img/Frame 1.png">
+        <input type="image" class="x" src="img/Image.png" onclick="closePopup()">
+        <h2 class="imgtext">Please pick a Project!</h2>
+        <a href="opportUNITY.html"><img class="projectpic1" src="img/poster1.png"></a>
+        <a href="recharged.html"><img class="projectpic2" src="img/poster.png"></a>
+        <a href="pantry.html"><img class="projectpic3" src="img/Untitled design.png"></a>
+
+
+        </div>
+    </div>
+
+     <!-- DS Popup -->
+<div class="popupDS" id="popupDS">
+    <div class="cardDS" id="cardDS">
+        <div class="dragBarDS" id="dragBarDS"></div>
+        <img class="windowDS" src="img/picmix.com_2615054.jpg" alt="DS window">
+        <input type="image" class="xDS" src="img/IMG_3534 1.png" onclick="closeDSPopup()">
+        <h2 class="imgtextDS">Contact</h2><!-- Contact form -->
+        <form id="dsContactForm">
+            <input class="name" type="text" name="user_name" placeholder="Your Name" required>
+            <input class="emailz" type="email" name="user_email" placeholder="Your Email" required>
+            <textarea class="message" name="message" placeholder="Your Message" required></textarea>
+            <button class="but" type="submit">Send</button>
+        </form>
+        <p id="dsSuccessMessage" style="display:none;color:green;">Message sent! Thank you.</p>
+
+    </div>
+</div>
+
+
+
+
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("uCZgCkJ-pezcnU70F"); // Replace with your EmailJS User ID
+    })();
+</script>
+</html>

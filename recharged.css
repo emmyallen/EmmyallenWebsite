@@ -1,0 +1,417 @@
+.back2shelf{
+    height: 110px;
+    width: 110px;
+    margin-left: 180px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.back2shelfA{
+    height: 50px;
+    width: 50px;
+    margin-left:    -36px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+a{
+    color: #4c4591;
+}
+
+.middle{
+    /* margin-left: 25em; */
+    /* margin-top: 5em;  */
+    display: flex;
+    margin-top: 5em;
+ }
+
+body{
+    background-color: #4c4591;
+}
+
+.car{
+    width: 1200px;
+    height: 1000px;
+    margin-top: 38em;
+    margin-left: 3em;
+    /* position: relative; */
+    
+}
+
+h1{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw; /* scales with screen width */
+    text-align: center;
+    color: #464551;
+    /* border: black 4px solid; */
+    /* z-index: 2; */
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(2rem, 6vw, 5rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #222 0%, #8c7aff 25%, #ffffff 50%, #8c7aff 75%, #222 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: charge 3s linear infinite;
+    margin-top: 1em;
+}
+
+@keyframes charge {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
+/* Optional glow for extra energy effect */
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(140,122,255,0.25) 0%, transparent 70%);
+    filter: blur(15px);
+    z-index: -1;
+}
+
+
+.dvd{
+   
+    width: 800px;
+    position: absolute;
+    right: 5em;
+    transition: transform 2s ease;
+    /* z-index: 2; */
+}
+
+
+.dvd:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.play{
+    /* z-index: 2; */
+    position: relative;
+    width: 315px;
+    height: 200px;
+    /* right: 35em; */
+    top: -41em;
+    left: 1.2em;
+}
+
+a{
+    color: #4c4591;
+}
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 9em;
+    gap: 2em;
+} */
+
+.sum {
+    max-width: 400px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    background-color: #7c76ac;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    margin: 0 auto;
+    position: absolute;
+    top: 14em;
+    left: 3em;
+    z-index: 2;
+}
+
+.overview{
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #7c76ac;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 100em;
+    left: 30em;
+}
+.overview2{
+    max-width: 640px;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #cac7e1;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 113em;
+    left: 50em;
+}
+.overview3{
+    max-width: 550px;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #cac7e1;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 113em;
+    left: 6em;
+}
+
+.overview4{
+    max-width: 640px;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #cac7e1;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 113em;
+    left: 50em;
+}
+.overview5{
+    max-width: 640px;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #cac7e1;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 113em;
+    left: 50em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* gap: 2em; */
+    /* margin-top: 14em; */
+    /* padding: 2em; */
+}
+
+
+.charging-phone {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 60px;
+    height: 100px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.charging-phone img {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated; /* keeps the retro look */
+    display: block;
+}
+
+/* Charging bar inside the phone */
+.charge-bar {
+    position: absolute;
+    bottom: 20%;
+    width: 30%;
+    height: 0%;
+    background-color: #00ff55;
+    border-radius: 2px;
+    animation: chargeUp 2.5s infinite ease-in-out;
+}
+
+/* Charging animation */
+@keyframes chargeUp {
+    0% { height: 0%; opacity: 0.5; }
+    50% { height: 60%; opacity: 1; }
+    100% { height: 0%; opacity: 0.5; }
+}
+
+/* Makes sure it scales on smaller screens */
+@media (max-width: 600px) {
+    .charging-phone {
+        width: 40px;
+        height: 70px;
+        top: 10px;
+        right: 10px;
+    }
+}
+/* Charging phone */
+.phone-container {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    height: 70px;
+    background: #4c4591;
+    border: 0px solid #555;
+    border-radius: 6px;
+    padding: 4px;
+    z-index: 1000;
+  }
+  
+  .phone {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #999;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #1a1a1a;
+  }
+  
+  .battery {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, #00ff00, #b3ffb3);
+    transition: height 0.25s ease-out;
+    border-radius: 2px;
+  }
+  
+  .phone,
+  .battery {
+    image-rendering: pixelated;
+  }
+/* --- Large Tablets --- */
+@media (max-width: 1200px) {
+    .dvd {
+        position: static;
+        width: 80%;
+        margin: 2em auto;
+        display: block;
+    }
+
+    .car {
+        width: 90%;
+        height: auto;
+        margin: 2em auto;
+        display: block;
+    }
+
+    .sum,
+    .overview,
+    .overview3,
+    .overview5 {
+        position: static;
+        margin: 2em auto;
+        display: block;
+        max-width: 90%;
+    }
+
+    .play {
+        position: static;
+        margin: 2em auto;
+        width: 90%;
+        height: auto;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* --- Tablets --- */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    .sum {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .overview,
+    .overview3,
+    .overview5 {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+/* --- Phones --- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 10vw;
+        top: 2%;
+    }
+
+    .back2shelf {
+        height: 70px;
+        width: 70px;
+        margin-left: 20px;
+    }
+
+    .back2shelfA {
+        height: 30px;
+        width: 30px;
+        margin-left: -20px;
+    }
+
+    .sum,
+    .overview,
+    .overview3,
+    .overview5 {
+        font-size: 0.9rem;
+        padding: 0.8em;
+        line-height: 1.6;
+    }
+
+    .dvd {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin: 1em auto;
+    }
+
+    .car {
+        width: 100%;
+        height: auto;
+        margin: 1em auto;
+    }
+
+    .play {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        position: static;
+        margin: 1em auto;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+}
