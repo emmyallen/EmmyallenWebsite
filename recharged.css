@@ -304,6 +304,73 @@ section {
   }
 
 
+  @media (min-width: 1600px) and (max-width: 2000px){
+        .sum{
+            
+                max-width: 400px;
+                font-size: 1.2rem;
+                line-height: 1.8;
+                background-color: #7c76ac;
+                box-shadow: 10px 10px 5px rgb(22, 41, 47);
+                border: 2px solid;
+                padding: 1em;
+                margin: 0 auto;
+                position: absolute;
+                top: 14em;
+                left: 7em;
+                z-index: 2;
+            
+
+        }
+
+        .car{
+            width: 1200px;
+            height: 1000px;
+            margin-top: 38em;
+            margin-left: 5em;
+
+        }
+        .play{
+             /* z-index: 2; */
+            position: relative;
+            width: 315px;
+            height: 200px;
+            /* right: 35em; */
+            top: -41em;
+            left: 8.2em;
+        }
+
+        .overview3{
+            max-width: 550px;
+            font-size: 1rem;
+            line-height: 3;
+            background-color: #cac7e1;
+            box-shadow: 10px 10px 5px rgb(22, 41, 47);
+            border: 2px solid;
+            padding: 1em;
+            /* margin: 0 auto; */
+            position: absolute;
+            top: 113em;
+            left: 8em;
+        }
+
+        .overview5{
+            max-width: 640px;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #cac7e1;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 113em;
+    left: 55em;
+        }
+  }
+
+
+
 
 /* --- Large Tablets --- */
 @media (max-width: 1200px) {
