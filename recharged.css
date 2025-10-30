@@ -302,6 +302,22 @@ section {
   .battery {
     image-rendering: pixelated;
   }
+
+@media (max-width: 1800px){
+    .play {
+        position: relative;
+        /* margin: 2em auto; */
+        width: 315px;
+        height: 200px;
+        right: 47em;
+        top: 60em;
+
+    }
+
+
+
+}
+
 /* --- Large Tablets --- */
 @media (max-width: 1200px) {
     .dvd {
@@ -348,12 +364,16 @@ section {
 
 /* --- Large Tablets --- */
 @media (max-width: 1200px) {
-    .dvd, .car, .play {
+    .dvd, .play {
         position: static;
         width: 80%;
         height: auto;
         margin: 1.5em auto;
         display: block;
+    }
+
+    .car{
+        display: none;
     }
 
     .sum,
@@ -387,8 +407,12 @@ section {
         line-height: 1.6;
     }
 
-    .dvd, .car, .play {
+    .dvd, .play {
         width: 90%;
+    }
+
+    .car{
+        display: none;
     }
 }
 
