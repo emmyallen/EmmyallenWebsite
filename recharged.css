@@ -303,7 +303,7 @@ section {
     image-rendering: pixelated;
   }
 /* --- Large Tablets --- */
-@media (max-width: 1800px) {
+@media (max-width: 1700px) {
     .dvd {
         position: static;
         width: 80%;
