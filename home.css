@@ -514,99 +514,56 @@ input {
         right: auto;
     }
 }
-/* ===== Horizontal Scroll for Small Screens ===== */
+//* Mobile horizontal scroll for the whole site */
 @media (max-width: 768px) {
-
-    /* Hide the shelves */
-    .bookcase, .shelf, .bshelf {
-        border: none;
-        width: 100%;
-        height: auto;
-        position: relative;
-        left: 0;
-        top: 0;
-        transform: none;
-        background-color: transparent;
+    body {
+        overflow-x: auto;          /* allow horizontal scroll */
+        overflow-y: hidden;        /* prevent vertical scroll if desired */
+        width: max-content;        /* let content define width */
+        min-width: 100%;           /* ensure desktop width is respected */
     }
 
-    /* Make books scroll horizontally */
-    .images-outer {
-        display: flex;
-        flex-direction: row; /* horizontal scroll */
-        overflow-x: auto;    /* enable scrolling */
-        padding: 1em 0;
-        gap: 0.5em;
-        justify-content: flex-start;
-        -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
-    }
-
-    /* Each book fixed size, no shrinking */
-    .images-outer input {
-        flex: 0 0 auto;
-        width: 150px;
-        height: auto;
-        margin: 0;
-        transform: none; /* remove rotation/desktop transforms */
-    }
-
-    /* Optional: hide scrollbar for cleaner look */
-    .images-outer::-webkit-scrollbar {
+    /* Optional: hide the scrollbar for cleaner look */
+    body::-webkit-scrollbar {
         display: none;
     }
 
-    /* Adjust popup links to stack nicely */
-    .projectpic1, .projectpic2, .projectpic3 {
+    /* Remove fixed positioning for main containers */
+    .bookcase, .shelf, .bshelf, .images-outer, .popupProjects, .popupDS, 
+    .cig, .tack, .dsbox, .git, .linkedin {
+        position: relative;       /* ignore absolute/fixed positioning */
+        transform: none;          /* remove desktop transforms */
+    }
+
+    /* Keep original widths/heights of all images and elements */
+    .bookcase > *, 
+    .images-outer input,
+    .popupProjects img,
+    .popupDS img,
+    .cig, .tack, .dsbox, .git, .linkedin {
+        flex: 0 0 auto;
+        width: auto;
+        height: auto;
+    }
+
+    /* Allow bookcase items to remain inline horizontally */
+    .bookcase {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .images-outer {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+    }
+
+    /* Popups remain their size but scroll with the page */
+    .popupProjects, .popupDS {
         position: relative;
         top: auto;
         left: auto;
-        width: 80%;
-        margin: 0.5em auto;
-    }
-
-    /* Adjust popup itself */
-    .popupProjects {
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%) scale(0.8);
-    }
-
-    /* Shrink top text */
-    .toptext {
-        font-size: 8vw;
-        top: 5%;
-    }
-
-    /* Optional: adjust decorative images */
-    .cig {
-        width: 120px;
-        left: 5%;
-        top: 100px;
-    }
-
-    .tack {
-        width: 15px;
-        left: 10%;
-        top: 105px;
-    }
-}
-
-/* Extra small screens (phones) */
-@media (max-width: 480px) {
-    .images-outer input {
-        width: 180px;
-        margin: 0 0.3em;
-    }
-
-    .projectpic1, .projectpic2, .projectpic3 {
-        width: 95%;
-    }
-
-    .popupProjects {
-        width: 95%;
-        transform: translateX(-50%) scale(0.6);
-    }
-
-    .toptext {
-        font-size: 10vw;
+        transform: none;
     }
 }
