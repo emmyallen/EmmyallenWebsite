@@ -340,6 +340,20 @@ section {
             left: -48em;
         }
 
+        .overview{
+            max-width: 600px;
+    font-size: 1rem;
+    line-height: 3;
+    background-color: #7c76ac;
+    box-shadow: 10px 10px 5px rgb(22, 41, 47);
+    border: 2px solid;
+    padding: 1em;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 100em;
+    left: 40em;
+        }
+
         .overview3{
             max-width: 550px;
             font-size: 1rem;
@@ -351,7 +365,7 @@ section {
             /* margin: 0 auto; */
             position: absolute;
             top: 113em;
-            left: 12em;
+            left: 15em;
         }
 
         .overview5{
@@ -365,7 +379,7 @@ section {
     /* margin: 0 auto; */
     position: absolute;
     top: 113em;
-    left: 55em;
+    left: 65em;
         }
   }
 
