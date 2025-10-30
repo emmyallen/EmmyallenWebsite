@@ -360,6 +360,56 @@ section {
     }
 }
 
+
+/* --- Large Tablets --- */
+@media (max-width: 1200px) {
+    .dvd, .car, .play {
+        position: static;
+        width: 80%;
+        height: auto;
+        margin: 1.5em auto;
+        display: block;
+    }
+
+    .sum,
+    .overview,
+    .overview3,
+    .overview5 {
+        position: static;
+        margin: 1.5em auto;
+        display: block;
+        max-width: 90%;
+        padding: 1em;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* --- Medium Tablets --- */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    .sum,
+    .overview,
+    .overview3,
+    .overview5 {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .dvd, .car, .play {
+        width: 90%;
+    }
+}
+
+
+
+
 /* --- Phones --- */
 @media (max-width: 600px) {
     h1 {
