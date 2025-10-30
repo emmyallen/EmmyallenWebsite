@@ -303,7 +303,7 @@ section {
     image-rendering: pixelated;
   }
 /* --- Large Tablets --- */
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
     .dvd {
         position: static;
         width: 80%;
@@ -329,10 +329,13 @@ section {
     }
 
     .play {
-        position: static;
-        margin: 2em auto;
-        width: 90%;
-        height: auto;
+        position: relative;
+        /* margin: 2em auto; */
+        width: 315px;
+        height: 200px;
+        right: 47em;
+        top: 60em;
+
     }
 
     section {
