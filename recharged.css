@@ -303,7 +303,7 @@ section {
     image-rendering: pixelated;
   }
 
-@media (max-width: 1800px){
+@media (max-width: 3000px){
     .play {
         position: relative;
         /* margin: 2em auto; */
