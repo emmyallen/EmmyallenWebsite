@@ -344,24 +344,6 @@ section {
     }
 }
 
-/* --- Tablets --- */
-@media (max-width: 900px) {
-    h1 {
-        font-size: 8vw;
-    }
-
-    .sum {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-
-    .overview,
-    .overview3,
-    .overview5 {
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-}
 
 
 /* --- Large Tablets --- */
@@ -449,9 +431,11 @@ section {
     }
 
     .car {
-        width: 100%;
+        /* width: 100%;
         height: auto;
-        margin: 1em auto;
+        margin: 1em auto; */
+        display: none;
+
     }
 
     .play {
@@ -461,6 +445,8 @@ section {
         position: static;
         margin: 1em auto;
     }
+
+    
 
     section {
         flex-direction: column;
